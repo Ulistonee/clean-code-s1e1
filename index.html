@@ -8,14 +8,14 @@
   <title>Todo App</title>
 </head>
 <body>
-  <header class="aaa">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="header__subtitle" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="centered-main-page-element">
+  <main class="main-wrapper">
     <section>
       <p id="topSectionForAddingElementToList"></p>
-      <label for="new-task">Add Item</label>
+      <label class="heading" for="new-task">Add Item</label>
       <div class="task-row-wrapper">
         <input id="new-task"class="task" type="text">
         <button>Add</button>
@@ -23,7 +23,7 @@
     </section>
     <section>
       <article>
-        <h3>Todo</h3>
+        <h3 class="heading">Todo</h3>
         <ul id="incompleteTasks">
           <li>
             <input type="checkbox">
@@ -46,7 +46,7 @@
         </ul>
       </article>
       <article>
-        <h3>Completed</h3>
+        <h3 class="heading">Completed</h3>
         <ul id="completed-tasks">
             <li>
               <input type="checkbox" checked>
