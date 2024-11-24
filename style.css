@@ -44,7 +44,34 @@ body {
 .task-input__field {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
+}
+
+.task-list__text {
+    vertical-align: middle;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.task-list__input {
+    vertical-align: middle;
+    flex-grow: 1;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+    width: 226px;
+    display: none;
 }
 
 ul li.task-list__item--editable input[type=text] {
