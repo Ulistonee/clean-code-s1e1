@@ -7,7 +7,7 @@ body {
 
 ul {
     margin:0;
-    padding: 0px;
+    padding: 0px; /* TODO according to which rule to delete px*/
 }
 
 li, h3 {
