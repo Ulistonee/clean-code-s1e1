@@ -30,17 +30,17 @@
             <input type="checkbox" aria-label="Checkbox">
             <label class="task-list__text">Pay Bills</label>
             <input class="task-list__input" type="text" aria-label="Task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button data-btn-type="edit">Edit</button>
+            <button data-btn-type="delete">
               <img src="./remove.svg" alt="image of removal icon">
             </button>
           </li>
           <li class="task-list__item--editable">
             <input type="checkbox" aria-label="Checkbox">
-            <label class="task-list__text">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task" aria-label="Task">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <label class="task-list__text task-list__text--editable">Go Shopping</label>
+            <input class="task-list__input task-list__input--editable" type="text" value="Go Shopping" aria-label="Task">
+            <button data-btn-type="edit">Save</button>
+            <button data-btn-type="delete">
               <img src="./remove.svg" alt="image of removal icon">
             </button>
           </li>
@@ -48,13 +48,13 @@
       </article>
       <article>
         <h3 class="heading">Completed</h3>
-        <ul id="completed-tasks">
+        <ul class="task-list" id="completed-tasks">
             <li>
               <input type="checkbox" checked aria-label="Checkbox">
-              <label class="task">See the Doctor</label>
-              <input type="text" class="task" aria-label="Task">
-              <button class="edit">Edit</button>
-              <button class="delete">
+              <label class="task-list__text">See the Doctor</label>
+              <input class="task-list__input" type="text" aria-label="Task">
+              <button data-btn-type="edit">Edit</button>
+              <button data-btn-type="delete">
                 <img src="./remove.svg" alt="image of removal icon">
               </button>
               </li>
