@@ -127,10 +127,13 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted=function(){
     console.log("Complete Task...");
-
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    console.log(listItem)
+    let label = listItem.querySelector('.task-list__text');
+    label.classList.toggle('task-list__text--done');
     completedTasksHolder.appendChild(listItem);
+
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -142,6 +145,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    let label = listItem.querySelector('.task-list__text');
+    label.classList.toggle('task-list__text--done');
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
